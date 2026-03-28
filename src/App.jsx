@@ -260,10 +260,9 @@ export default function App(){
         {/* ════ 支払いゲート ════ */}
         {step==='payment'&&(
           <>
-            <div style={S.coverTop}>
-              <div style={S.coverBrand}>PERSONAL MANUAL SERIES — VOL.01</div>
-              <div style={S.coverTitle}>自分の取扱説明書</div>
-              <div style={S.coverSub}>四柱推命 × 西洋占星術 × 性格診断</div>
+            {/* 表紙画像 */}
+            <div style={{width:'100%',lineHeight:0}}>
+              <img src="/cover.png" alt="ジブン取扱説明書" style={{width:'100%',display:'block'}}/>
             </div>
             <div style={S.coverMid}>
               <span style={S.coverMidText}>あなたの「正しい使い方」がわかります</span>
