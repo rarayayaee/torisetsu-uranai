@@ -339,6 +339,9 @@ export default function App(){
                 クレジットカード / Apple Pay / Google Pay 対応<br/>
                 Stripe社の安全な決済システムを使用しています
               </div>
+              <div style={{textAlign:'center',marginTop:'16px'}}>
+                <a href="/tokusho.html" target="_blank" style={{fontSize:'11px',color:'#aaa',fontFamily:'sans-serif',textDecoration:'underline'}}>特定商取引法に基づく表記</a>
+              </div>
             </div>
           </>
         )}
@@ -482,8 +485,9 @@ export default function App(){
             {/* フッター */}
             <div style={S.footer}>
               <div>
-                <div style={S.footerText}>© 自分の取扱説明書 / 四柱推命×西洋占星術</div>
+                <div style={S.footerText}>© ジブン取扱説明書 / 四柱推命×西洋占星術</div>
                 <div style={{...S.footerText,marginTop:'2px'}}>発行日：{new Date().toLocaleDateString('ja-JP')}</div>
+                <a href="/tokusho.html" target="_blank" style={{...S.footerText,marginTop:'4px',display:'block',color:'#aaa',textDecoration:'underline'}}>特定商取引法に基づく表記</a>
               </div>
               <button style={S.resetBtn} onClick={reset}>新しい取扱説明書を作る</button>
             </div>
